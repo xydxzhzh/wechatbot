@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/869413421/wechatbot/config"
-	"github.com/eatmoreapple/openwechat"
+	"github.com/xydxzhzh/wechatbot/config"
+	"github.com/xydxzhzh/openwechat"
 	"log"
 )
 

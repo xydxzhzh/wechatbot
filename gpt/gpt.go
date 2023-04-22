@@ -1,9 +1,9 @@
-package gtp
+package gpt
 
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/869413421/wechatbot/config"
+	"github.com/xydxzhzh/wechatbot/config"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -35,7 +35,7 @@ type ChatGPTRequestBody struct {
 	PresencePenalty  int     `json:"presence_penalty"`
 }
 
-// Completions gtp文本模型回复
+// Completions gpt文本模型回复
 //curl https://api.openai.com/v1/completions
 //-H "Content-Type: application/json"
 //-H "Authorization: Bearer your chatGPT key"
@@ -55,7 +55,7 @@ func Completions(msg string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	log.Printf("request gtp json string : %v", string(requestData))
+	log.Printf("request gpt json string : %v", string(requestData))
 	req, err := http.NewRequest("POST", BASEURL+"completions", bytes.NewBuffer(requestData))
 	if err != nil {
 		return "", err

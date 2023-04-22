@@ -1,5 +1,5 @@
-module github.com/869413421/wechatbot
+module github.com/xydxzhzh/wechatbot
 
 go 1.16
 
-require github.com/eatmoreapple/openwechat v1.2.1
+require github.com/xydxzhzh/openwechat wechatbot

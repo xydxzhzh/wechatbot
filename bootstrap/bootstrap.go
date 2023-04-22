@@ -1,8 +1,8 @@
 package bootstrap
 
 import (
-	"github.com/869413421/wechatbot/handlers"
-	"github.com/eatmoreapple/openwechat"
+	"github.com/xydxzhzh/wechatbot/handlers"
+	"github.com/xydxzhzh/openwechat"
 	"log"
 )
 
